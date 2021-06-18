@@ -23,6 +23,7 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             resultPhrase,
@@ -34,7 +35,10 @@ class Result extends StatelessWidget {
           ),
           FlatButton(
             onPressed: resetHandler,
-            child: Text('Reset Quiz'),
+            child: Text(
+              'Reset Quiz',
+              style: TextStyle(fontSize: 20),
+            ),
             textColor: Colors.blue,
           ),
         ],
